@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>图书编号</td>
+            <td>图书名字</td>
+            <td>图书作者</td>
+            <td>上架时间</td>
+        </tr>
+
+        <tr th:each="b:${bookList}">
+            <td th:text="${b.b_id}">图书编号</td>
+            <td th:text="${b.b_name}">图书名字</td>
+            <td th:text="${b.b_author}">图书作者</td>
+            <td th:text="${b.b_time}">上架时间</td>
+        </tr>
+    </table>
+</body>
+</html>
