@@ -27,6 +27,7 @@ public class BookController {
     public String queryAll(ModelMap map){
         System.out.println("我是老王");
         System.out.println("我不是老王！");
+        System.out.println("zhongtt123");
         List<Book> books = bookService.queryAll();
         map.put("bookList", books);
         return "book";
