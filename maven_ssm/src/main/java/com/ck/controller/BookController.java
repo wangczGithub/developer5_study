@@ -30,6 +30,11 @@ public class BookController {
         System.out.println("zhongtt123");
         System.out.println("12345678678945");
         System.out.println("我是老王2.....");
+
+        System.out.println("我是老王3！");
+        System.out.println("我是老王4！");
+        System.out.println("我是老王5！");
+        System.out.println("我是老王6！");
         List<Book> books = bookService.queryAll();
         map.put("bookList", books);
         return "book";
