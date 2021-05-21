@@ -28,6 +28,7 @@ public class BookController {
         System.out.println("我是老王");
         System.out.println("我不是老王！");
         System.out.println("zhongtt123");
+        System.out.println("我是老王2.....");
         List<Book> books = bookService.queryAll();
         map.put("bookList", books);
         return "book";
